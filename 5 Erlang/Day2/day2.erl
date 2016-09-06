@@ -2,7 +2,7 @@
 -export([find/2,
         readBoard/1]).
 
-%% Write a function that accepts the list and a keyword and returns the associated values for the keyword.
+%% Write a function that accepts a list and a keyword and returns the associated values for the keyword.
 %% run with:                     
 %% day2:find([{erlang, "a functional language"}, {ruby, "an OO language"}], erlang).
 find(List, Keyword) ->  [{_, Val}|_] = lists:filter(fun({Key, _}) -> Key == Keyword end, List),
@@ -15,7 +15,7 @@ find(List, Keyword) ->  [{_, Val}|_] = lists:filter(fun({Key, _}) -> Key == Keyw
 %% [{Product, Price * Quantity} || {Product, Quantity, Price} <- [{pencil, 4, 0.25}, {pen, 1, 1.20}, {paper, 2, 0.20}]].
 
 
-%% Write a program that reads a tic-tac-toe board...
+%% Write a program that reads a tic-tac-toe board.
 %% readBoard accepts a list of size 9, where each element is either o, x, or empty.
 readBoard([C0, C1, C2, C3, C4, C5, C6, C7, C8]) ->
     if 

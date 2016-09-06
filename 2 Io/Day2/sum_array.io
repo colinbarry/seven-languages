@@ -1,4 +1,4 @@
-# Write a program to add up all of the numbers is a two-dimensional array.
+# Write a program to add up all of the numbers in a two-dimensional array.
 
 sum2DArray := method(arr,
     total := 0
